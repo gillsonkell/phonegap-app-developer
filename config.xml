@@ -110,5 +110,10 @@
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
 
     <allow-navigation href="*" />
-
+    <config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist">
+		<true />
+	</config-file>
+	<config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist">
+		<false />
+	</config-file>
 </widget>
